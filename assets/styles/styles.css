@@ -1,0 +1,38 @@
+@import url(./reset.css);
+
+:root {
+  --primary-color: #f0f0f0;
+
+  --primary-bg-color: #111217;
+  --secondary-bg-color: #28292e;
+  --border-color: #28292e;
+
+  --title-color: #9a9a9c;
+  --link-color: #9a9a9c;
+  --icon-color: #c7c8c9;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+}
+
+i {
+  color: var(--icon-color);
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.brand__logo {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+#toggleTheme {
+  width: 3rem;
+}
