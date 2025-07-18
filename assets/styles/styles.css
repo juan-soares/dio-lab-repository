@@ -1,38 +1,65 @@
-@import url(./reset.css);
-
-:root {
-  --primary-color: #f0f0f0;
-
-  --primary-bg-color: #111217;
-  --secondary-bg-color: #28292e;
-  --border-color: #28292e;
-
-  --title-color: #9a9a9c;
-  --link-color: #9a9a9c;
-  --icon-color: #c7c8c9;
-}
-
-body {
-  background-color: var(--primary-bg-color);
-}
-
-i {
-  color: var(--icon-color);
-}
-
 .header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 0.5rem 1rem;
 }
 
-.brand__logo {
+.header__brand .brand__logo {
   width: 3.25rem;
   height: 3.25rem;
 }
 
 #toggleTheme {
-  width: 3rem;
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  background: var(--primary-bg-color);
+}
+
+.menu--mobile {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+}
+
+.menu--mobile .menu__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+}
+
+.menu__item {
+  width: 100%;
+}
+
+.menu__link.active .menu__icon,
+.menu__link.active .menu__text {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.menu__icon,
+.menu__text {
+  color: var(--text-color);
+}
+
+.menu__icon {
+  font-size: 1.5rem;
+}
+
+.menu__text {
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
