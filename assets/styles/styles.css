@@ -7,13 +7,17 @@
   padding: 0.5rem 1rem;
 }
 
+.header__nav--main {
+  display: none;
+}
+
 .header__brand .brand__logo {
   width: 3.25rem;
   height: 3.25rem;
 }
 
 #toggleTheme {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--primary-color);
 }
 
@@ -21,6 +25,10 @@
   display: flex;
   align-items: center;
   background: var(--primary-bg-color);
+}
+
+.menu--main {
+  gap: 1rem;
 }
 
 .menu--mobile {
@@ -40,12 +48,18 @@
   gap: 0.5rem;
 }
 
+.header__nav--main {
+  display: none;
+}
+
 .menu__item {
   width: 100%;
 }
 
 .menu__link.active .menu__icon,
-.menu__link.active .menu__text {
+.menu__link.active .menu__text,
+.menu__link:hover .menu__icon,
+.menu__link:hover .menu__text {
   color: var(--primary-color);
   font-weight: 600;
 }
@@ -56,10 +70,15 @@
 }
 
 .menu__icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .menu__text {
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-transform: uppercase;
+}
+
+.header__toggle {
+  display: flex;
+  justify-content: end;
 }
