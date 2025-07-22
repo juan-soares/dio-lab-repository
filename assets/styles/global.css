@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root,
 :root[data-theme="dark"] {
@@ -8,7 +9,7 @@
   --secondary-bg-color: #28292e;
   --border-color: #28292e;
 
-  --title-color: #9a9a9c;
+  --title-color: #f0f0f0;
   --text-color: #9a9a9c;
   --link-color: #9a9a9c;
   --icon-color: #c7c8c9;
@@ -41,6 +42,23 @@ a:hover {
   font-weight: 600;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "League Spartan", Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
 i {
   color: var(--icon-color);
+}
+
+p {
+  font-size: 1.25rem;
+  text-align: justify;
 }
