@@ -103,11 +103,17 @@
   width: 100%;
   background: transparent;
   border-radius: 3.125rem;
-  padding: 0.875rem 1rem;
+  padding: 0.875rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.625rem;
+  transition: ease-in-out 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.3s;
 }
 
 .btn span,

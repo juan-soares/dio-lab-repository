@@ -19,14 +19,31 @@
     display: none;
   }
 
+  .main {
+    padding: 8rem 6rem 4rem 6rem;
+  }
+
   .main__content1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 8rem 6rem 6.25rem 6rem;
+  }
+
+  .content1__title {
+    font-size: 4rem;
+  }
+
+  .section__skills {
+    padding: 6.25rem 6rem 2rem 6rem;
+    margin-top: -6rem;
   }
 }
 
+@media (min-width: 1200px) {
+  .main__content1 .btn {
+    width: auto;
+  }
+}
 @media (min-width: 1400px) {
   .header {
     padding: 1rem 15rem;
