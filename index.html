@@ -46,6 +46,34 @@
           </li>
         </ul>
       </nav>
+      <nav class="header__nav--mobile">
+        <ul class="menu menu--mobile">
+          <li class="menu__item">
+            <a class="menu__link active" href="#home">
+              <i class="menu__icon bi bi-house-door"> </i>
+              <span class="menu__text">Home</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#sobre">
+              <i class="menu__icon bi bi-person"> </i>
+              <span class="menu__text">Sobre</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#projetos">
+              <i class="menu__icon bi bi-window-stack"> </i>
+              <span class="menu__text">Projetos</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contato">
+              <i class="menu__icon bi bi-envelope"> </i>
+              <span class="menu__text">Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <div class="header__brand">
         <img
           class="brand__logo"
@@ -57,40 +85,13 @@
         <i id="toggleTheme" class="bi bi-sun"></i>
       </div>
     </header>
-    <nav class="header__nav--mobile">
-      <ul class="menu menu--mobile">
-        <li class="menu__item">
-          <a class="menu__link active" href="#home">
-            <i class="menu__icon bi bi-house-door"> </i>
-            <span class="menu__text">Home</span>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#sobre">
-            <i class="menu__icon bi bi-person"> </i>
-            <span class="menu__text">Sobre</span>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#projetos">
-            <i class="menu__icon bi bi-window-stack"> </i>
-            <span class="menu__text">Projetos</span>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#contato">
-            <i class="menu__icon bi bi-envelope"> </i>
-            <span class="menu__text">Contato</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+
     <main class="main">
       <div class="main__content1">
         <h1 class="content1__title">
           <b class="title__highlight">Inovação</b> & Desenvolvimento Front-end
         </h1>
-        <p>
+        <p class="content1__intro">
           Juan Carlos | São Paulo - SP | Desenvolvedor e Entusiasta Front-end.
         </p>
         <ul class="menu menu--social">
@@ -127,7 +128,9 @@
       </div>
     </main>
     <section class="section__skills">
-      <h2>Conhecimento nas principais tecnologias do mercado.</h2>
+      <h2 class="skills__title">
+        Conhecimento nas principais tecnologias do mercado.
+      </h2>
       <ul class="skills__list">
         <li class="skills__item">
           <img
@@ -162,6 +165,13 @@
             class="skills__logo"
             src="./public/img/typescript-icon.png"
             alt="Logotipo do Typescript."
+          />
+        </li>
+        <li class="skills__item">
+          <img
+            class="skills__logo"
+            src="./public/img/git-icon.png"
+            alt="Logotipo do git."
           />
         </li>
       </ul>

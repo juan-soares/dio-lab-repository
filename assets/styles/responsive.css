@@ -37,15 +37,63 @@
     padding: 6.25rem 6rem 2rem 6rem;
     margin-top: -6rem;
   }
+
+  .footer {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1200px) {
+  .main {
+    padding: 12rem 6rem 2rem;
+  }
+
   .main__content1 .btn {
     width: auto;
+  }
+
+  .section__skills {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10rem 6rem 4rem;
+  }
+
+  .skills__title {
+    font-size: 3.5rem;
+    width: 60%;
+  }
+
+  .skills__list {
+    gap: 1rem;
+  }
+
+  .skills__item {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .skills__logo {
+    height: 3rem;
   }
 }
 @media (min-width: 1400px) {
   .header {
     padding: 1rem 15rem;
+  }
+
+  .main {
+    padding: 12rem 15rem 2rem;
+  }
+
+  .content1__title {
+    font-size: 6.25rem;
+  }
+
+  .content1__intro {
+    font-size: 1.5rem;
+  }
+
+  .section__skills {
+    padding: 10rem 15rem 4rem;
   }
 }

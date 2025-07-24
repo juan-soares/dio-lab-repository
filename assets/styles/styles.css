@@ -7,6 +7,10 @@
   padding: 0.5rem 1rem;
 }
 
+.header__nav--main {
+  display: none;
+}
+
 .header__toggle {
   display: flex;
   justify-content: end;
@@ -109,6 +113,7 @@
   justify-content: center;
   gap: 0.625rem;
   transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -174,9 +179,13 @@
   height: 2.4rem;
 }
 
+.footer {
+  margin-bottom: 5rem;
+}
+
 .footer p {
   font-size: 0.875rem;
   text-align: center;
-  margin-bottom: 5rem;
+
   padding: 1rem;
 }
